@@ -7,8 +7,8 @@ function config() {
             img_depth: 57 * 3.8462*0.9,
             particle_size: 8000.0,
             // zThres: 1500.0,
-            geneData: [{mediaLink: './data/geneData/geneData_WT786_rHipp.tsv', size: "48103424"}],
-            cellData: [{mediaLink: './data/cellData/cellData_WT786_rHipp.tsv', size: "17006592"}],
+            geneData: 'https://api.github.com/repos/camaat/datastore/contents/experiment_1',
+            cellData: 'https://api.github.com/repos/camaat/datastore/contents/experiment_1',
         },
     ];
     return d3.map(ini, function (d) {return d.name;})
